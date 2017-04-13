@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简历生成器</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                 <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >Chen Zhuo</h1>
+                <h4 id="persona-tag" >新能源/数据挖掘/R/Python/Spark</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">陈卓</span></li>
+					<li>
+                        <label class="left-label">年龄</label><span class="label-value">30</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">硕士</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">中国农业大学</span></li>
+                    <li>
+                        <label class="left-label">社会兼职</label><span class="label-value">CCF中国计算机学会会员</span></li>
+                	<li>
+                        <label class="left-label"></label><span class="label-value">ACM国际计算机协会会员</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">15210607169@163.com</span></li>
+                    <li>
+                        <label class="left-label">个人主页</label><span class="label-value"><a href="https://cz7169.github.io/resume/" target="_blank">https://cz7169.github.io/resume/</a></span></li>
+                    <li>
+                        <label class="left-label">Github</label><span class="label-value"><a href="https://github.com/cz7169" target="_blank">https://github.com/cz7169/</a></span></li>
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">统计建模</label><span class="label-value">回归,判别,聚类,关联,时间序列分析,生存分析,对应分析</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">深度学习</label><span class="label-value">DBN,CNN,ResNet,RNN,Word2Vec,LSTM</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">自然语言处理</label><span class="label-value">分词,主题分类,情感分析,自动摘要</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">R</label><span class="label-value">reshape2,dplyr,LiblineaR,ggplot2,shiny,MXnet</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">Python</label><span class="label-value">numpy,pandas,matplotlib,scikit-learn,Keras,TensorFlow</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">Spark</label><span class="label-value">SparkSQL,MLlib,Streaming,GraphX</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">其它</label><span class="label-value">熟练使用Matlab/SAS与SPSS,熟悉基本的SQL/Hive/HBase操作,有Linux和Mac下的开发经验</span></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="static/image/weixin.jpg" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+            <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>金风科技－数据分析主管 2014.07-2017.02</h3>
+                        <p>1.负责"金风慧能大数据平台"数据分析服务的整体设计规划与实施。
+                        <br/>2.为集团风机运维、供应链与备品备件、风机设计等部门提供数据分析支持。
+                        <br/>3.负责数据分析组的人员管理与考核。</p>
+                    </li>
+                    <li>
+                        <h3>东润环能-高级算法工程师 2012.07-2014.02</h3>
+                        <p>1.负责储能仿真系统数值控制策略设计与优化。
+                        <br/>2.负责功率预测平台中心端模型框架设计与精度优化，以及数值天气预报的数据挖掘。
+                        <br/>3.负责产品关键指标的提取、关键指标的路径分析、用户特征分析与风险分析。</p>
+                    </li>
+                    <li>
+                        <h3>北京市理化分析测试中心-助理研究员 2011.07-2012.07</h3>
+                        <p>支持材料分析室光谱与色谱数据的分析与建模。</p>
+                    </li>
+                </ul class="experience-list">
+                <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">项目经验</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>“发电宝”功率提升辅助分析工具(项目经理),2015.07-2016.12</h3>
+                        <p>
+                           <b>项目描述:</b>利用金风大数据平台为功率提升项目数据分析提供算法实现与可视化展示。
+                            <br/><b>主要职责:</b>设计试验机组选择与提升效果验证数据分析方案,开发并优化机组相似度分析模型,设计并完成单机版及分布式版分析工具
+                            <br/><b>项目效果:</b>1.为20余个功率提升项目提供了业务标准与分析报告2.搭建了基于R语言的分布式计算集群，效率比实施前提高30倍。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>新能源舆情与竞情分析(项目经理),2015.06-2017.02</h3>
+                        <p>
+                            <b>项目描述:</b>收集并整合招投标信息/厂商信息/政策信息/技术信息，挖掘销售机会,为商务与各级决策部门提供支持。
+                            <br/><b>主要职责:</b>建设并优化舆情信息平台,使用NLP模型分析市场信息,设计并优化定时简报与综合性分析报告。
+                            <br/><b>项目效果:</b>1.搭建了舆情信息平台为集团相关部门提供7*24时服务2.预测销售线索20余条,累计额度500余万元。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>新能源发电功率预测服务中心建设,2013.05-2014.02</h3>
+                        <p>
+                        <b>项目描述:</b>联合中科院大气所建立新能源功率预测服务中心业务平台，满足各类场站预测与算法更新需求（中关村现代服务业试点项目）。
+                            <br/><b>主要职责:</b>功率预测产品需求分析与数据流设计,Matlab功率预测模型与java程序接口设计与实施,数值天气预报地域关联性分析。
+                            <br/><b>项目效果:</b>1.实现模型自动部署，为700余个项目提供7*24小时预测服务;2.提高了20KM内邻近区域的预测精度。
+						</p>
+                    </li>
+                    <li>
+                        <h3>基于储能调节的新能源智能发电仿真,2012.12-2013.11</h3>
+                        <p>
+                            <b>项目描述:</b>建立风电场储能-功率预测系统联合智能调度仿真模型，提高运营经济性。
+                            <br/><b>主要职责:</b>负责控制策略设计与优化，以及投入产出经济性核算。
+                            <br/><b>项目效果:</b>1.丰富了储能系统的应用模式2.提供了功率预测增值服务方向。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="work info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>中国农业大学-农业生物环境与能源工程-农业统计（硕士）2009-2011</h3>
+                        <p>
+                            主修:应用数理统计，化学计量学，矩阵论，数据库原理，机器学习，生物环境测试与数据分析。主要研究方向为农业数据挖掘与近红外光谱建模分析。
+                        </p>
+                        </li>
+                        <li>
+                        <h3>中国农业大学-食品科学与工程（本科）2005-2009</h3>
+                        <p>
+                            主修:食品科学,食品化学,试验设计与多元分析。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">资质认证</span></h2>
+                <hr>
+                <ul class="experience-list"> 
+                    <li>
+                        <h3>深度学习与自然语言处理认证</h3>
+                        <p>
+                            中国中文信息学会讲习班:神经网络与表示学习，面向自然语言处理的神经网络模型。<br/>
+                            中国计算机学会讲习班:深度学习从算法到应用。
+                        </p>
+                    </li>  
+                    <li>
+                        <h3>机器学习认证</h3>
+                        <p>
+                            Coursera在线课程:Machine Learning，Stanford University，Andrew Ng.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>SAS官方认证</h3>
+                        <p>
+                            SAS Programming I Essentials,II Data Manipulation Techniques<br/>III Advanced Techniques & Efficiencies。
+                        </p>
+                    </li>
+                    <li>
+                        <h3>全国计算机等级考试三级数据库合格证书</h3>
+                    </li>   
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">论文专利</span></h2>
+                <hr>
+                <p>
+                专利《弥补功率预测精度的新能源发电系统》公开号CN103532143A,唯一发明人。<br/>
+                专利《基于风电机组功率的无人机调度方法、装置及系统》公开号CN105631765A,唯一发明人。<br/>
+                论文 《基于R语言的机组功率曲线分析与可视化应用》（第一作者）2015年中国风能大会,获2015年金风集团技术论文奖<br/>
+                论文 《Evaluation of MLR model for the determination of SSC in Whangkeumbae pears by using portable near-infrared spectrometer
+                     便携式近红外光谱仪检测黄金梨糖度的多元线性回归模型评估》,The Second Asian NIR symposium第二届亚洲近红外大会,2010<br/>
+                论文 《洋梨硬度的便携式可见/近红外漫透射检测技术》,农业机械学报(EI收录) 2010年11期<br/>
+                论文 《番茄叶片几何特征的提取与分析》,北方园艺 2010年第15期
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
